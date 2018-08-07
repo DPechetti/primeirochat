@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="chatbox">
+			<div class="chatlogs" id="chatlogs">
+				<div class="chat friend">
+					<div class="user-photo"><img src="img/user-one.png"></div>
+					<p class="chat-message">Bom dia amiguinho!!</p>
+				</div>
+				<div class="chat friend">
+					<div class="user-photo"><img src="img/user-one.png"></div>
+					<p class="chat-message">Como posso lhe chamar? :)</p>
+				</div>
+				<div id="msg"></div>
+			</div>
+			<div class="chat-form">
+				<textarea id="texto" placeholder="Digite seu nome aqui" onkeyup="clica();" onblur="this.focus()" autofocus></textarea>
+				<button id="enviar" onclick="enviar()" >Enviar</button>
+			</div>
+		</div>
+	</body>
+</html>
